@@ -11,11 +11,12 @@ public class Main {
         List<Integer> result = new ArrayList<>();
 
         for (int x : intList) {
-            if (x == 0 && x < 0 && x % 2 != 0) {
-                continue;
+            if (x > 0 && x % 2 == 0) {
+                result.add(x);
             }
 
-            result.add(x);
+        }
+        for (int x : result) {
             System.out.println(x);
         }
     }
