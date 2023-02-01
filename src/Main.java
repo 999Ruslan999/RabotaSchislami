@@ -11,6 +11,8 @@ public class Main {
         List<Integer> result = new ArrayList<>();
 
         for (int x : intList) {
+            if (x == 0 )
+                continue;
             if (x < 0)
                 continue;
             if (x % 2 != 0)
